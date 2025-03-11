@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "litellm_batch"
+version = "0.1.0"
+description = "Batch processing utilities for LiteLLM"
+readme = "README.md"
+authors = [
+    {name = "Viktor Petukhov", email = "viktor.petukhov+gh@pm.me"}
+]
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.6"
+dependencies = [
+    "tqdm>=1.67",
+    "asyncio>=3.4",
+    "litellm>=1.63",
+]
