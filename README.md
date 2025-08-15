@@ -5,7 +5,7 @@ A Python package for batch processing of LLM completions using [LiteLLM](https:/
 ## Installation
 
 ```bash
-pip install litellm_batch
+pip install git+https://github.com/VPetukhov/litellm-batch.git
 ```
 
 ## Usage
@@ -24,7 +24,7 @@ message_batch = [
 # Basic batch completion
 results = await acompletion_batch(
     message_batch=message_batch,
-    model="gpt-3.5-turbo",
+    model="gpt-5",
     progress=True  # Show progress bar
 )
 
@@ -35,7 +35,7 @@ print(f"Total cost: ${total_cost:.6f}")
 # Process batch and get responses, results, and cost
 responses, results, cost = await process_batch(
     message_batch=message_batch,
-    model="gpt-3.5-turbo"
+    model="gpt-5"
 )
 
 # Print the responses
